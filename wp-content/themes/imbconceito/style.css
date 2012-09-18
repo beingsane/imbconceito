@@ -1,0 +1,324 @@
+/*
+Theme Name: Imobiliária Conceito
+Theme URI: 
+Author: thiago-augusto.eti.br
+Author URI: http://thiago-augusto.eti.br
+Description: The 2011 theme for WordPress is sophisticated, lightweight, and adaptable. Make it yours with a custom menu, header image, and background -- then go further with available theme options for light or dark color scheme, custom link colors, and three layout choices. Twenty Eleven comes equipped with a Showcase page template that transforms your front page into a showcase to show off your best content, widget support galore (sidebar, three footer areas, and a Showcase page widget area), and a custom "Ephemera" widget to display your Aside, Link, Quote, or Status posts. Included are styles for print and for the admin editor, support for featured images (as custom header images on posts and pages and as large images on featured "sticky" posts), and special styles for six different post formats.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: dark, light, white, black, gray, one-column, two-columns, left-sidebar, right-sidebar, fixed-width, flexible-width, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-image-header, featured-images, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
+Text Domain: twentyeleven
+*/
+
+body {
+  background: #fff;
+  color: #4d4d4d;
+  font-size: 14px;
+  height: auto;
+}
+
+a {
+  color: #4d4d4d;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+p {
+  overflow: hidden;
+  padding: 10px 0;
+}
+
+.container_12,
+.container_16,
+.container_24 {
+  background-repeat: repeat-y;
+}
+/*
+.container_12 {
+  background-image: url(images/12_col.gif);
+}*/
+
+
+/* `Menu Principal
+----------------------------------------------------------------------------------------------------*/
+
+#nav-principal {
+  background: #4d4d4d;
+  box-shadow: 0 2px 2px #000;
+  margin-bottom: 30px;
+}
+
+#nav-principal .menu-menu-principal-container ul{
+  list-style: none;
+  margin-bottom: 0;
+  text-align: right;
+}
+
+#nav-principal .menu-menu-principal-container ul li {
+  display: inline-block;
+  padding: 10px 5px;
+}
+
+#nav-principal .menu-menu-principal-container ul li a{
+  color: #ffcc00;
+  font-size: 1.4em;
+  text-shadow: -1px 0px 0 #000000;
+  text-decoration: none;
+}
+
+#nav-principal .menu-menu-principal-container ul li:hover{
+  background: url(images/menu-hover.png) top repeat-x;  
+}
+
+
+/* `Header
+----------------------------------------------------------------------------------------------------*/
+
+#header {
+  margin-bottom: 20px;
+}
+
+.logotipo {
+  display: block;
+  width: 332px;
+  height: 130px;
+  background: url(images/logotipo.png) no-repeat;
+  text-indent: -1000em;
+}
+
+.logotipo:hover {
+  display: block;
+  width: 332px;
+  height: 130px;
+  background: url(images/logotipo.png) 0 -130px no-repeat;
+  text-indent: -1000em;
+}
+
+#header .grid_6 ul {  
+  list-style: none;
+  text-align: right;
+}
+
+.fone {
+  display: block;
+  background: url(images/fone.png) top right no-repeat;
+  font-size: 2em;  
+  color: #ffcc00;
+  text-shadow: -1px -1px 0 #000;
+  padding: 5px 60px 5px 0;
+
+}
+
+.fone:hover{
+  background: url(images/fone.png) right -52px no-repeat;
+}
+
+.celular {
+  display: block;
+  background: url(images/celular.png) top right no-repeat;
+  font-size: 2em;
+  color: #ffcc00;
+  text-shadow: -1px -1px 0 #000;
+  padding: 5px 60px 5px 0;
+}
+
+.celular:hover{
+  background: url(images/celular.png) right -52px no-repeat;
+}
+
+.email {
+  display: block;  
+  background: url(images/email.png) top right no-repeat;
+  font-size: 1.5em;
+  padding: 8px 60px 12px 0;
+}
+
+.email:hover{
+  background: url(images/email.png) right -52px no-repeat;
+}
+
+/* `Slideshow
+----------------------------------------------------------------------------------------------------*/
+
+#slideshow {
+
+}
+
+#slideshow .container_12{
+  background: #ececec;
+  padding: 20px 0;
+  border-bottom: 2px solid #fff;
+}
+
+#slideshow .grid_7{
+  position: relative;  
+}
+
+.destaque{
+  display: block;
+  background: url(../img/destaque.png) right no-repeat;
+  width: 123px;
+  height: 125px;
+  position: absolute;  
+  z-index: 1000;
+  top: -28px;
+  right: -15px;
+}
+
+#slideshow h2{
+  text-shadow: -1px -1px 0 #fff;
+}
+
+.bg-imovel {
+  background: url(images/bg-imovel.png) no-repeat;
+  width: 350px;
+  height: 210px;
+}
+
+/* `Search
+----------------------------------------------------------------------------------------------------*/
+
+#search {
+  background: #ffcc00 url(../img/bg-search.png) top;
+  padding: 10px 0 20px 0;
+  box-shadow: 0 2px 3px #444;
+}
+
+#search fieldset{
+  
+}
+
+#search legend{
+  font-size: 2em;
+  padding: 10px 0 20px 0;
+  text-shadow: 1px 1px 0 #fff;
+}
+
+#search label {
+  padding: 0 20px 0 0;
+  display: block;
+  float: left;
+}
+
+#search select{
+  padding: 6px;
+  font-size: 1.2em;
+  display: block;
+}
+
+#search input[type=submit]{
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 8px;
+  border: 1px solid #4d4d4d;
+  cursor: pointer;
+  background-image: linear-gradient(bottom, #4D4D4D 50%, #A6A6A6 83%);
+  background-image: -o-linear-gradient(bottom, #4D4D4D 50%, #A6A6A6 83%);
+  background-image: -moz-linear-gradient(bottom, #4D4D4D 50%, #A6A6A6 83%);
+  background-image: -webkit-linear-gradient(bottom, #4D4D4D 50%, #A6A6A6 83%);
+  background-image: -ms-linear-gradient(bottom, #4D4D4D 50%, #A6A6A6 83%);
+  position: relative;
+  bottom: -20px;
+}
+
+#search input[type=submit]:hover{  
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/* `Content
+----------------------------------------------------------------------------------------------------*/
+
+#content {
+  margin: 30px 0;
+}
+
+#content .grid_9 {
+  position: relative;
+}
+
+#content h2 {
+  background: #e6e6e6;
+  padding: 8px 0;
+  text-shadow: 1px 1px 0 #fff;
+}
+
+.canto {
+  background: url(images/canto.png) no-repeat;
+  position: absolute;
+  display: block;
+  height: 76px;
+  width: 30px;
+  left: -30px;
+}
+
+.imovel {  
+  display: block;  
+  width: 220px;
+  float: left;
+  margin-right: 11px;
+  margin-bottom: 20px;
+}
+
+.imovel ul{
+  list-style: none;
+}
+
+.imovel ul li {
+  margin: 0 8px;
+}
+
+.detalhes {
+  display: block;
+  background: #ffcc00;
+  text-align: center;
+  color: #000;
+  padding: 5px 0;
+  box-shadow: 0 12px 0px -5px #ececec;
+}
+
+/* `Footer
+----------------------------------------------------------------------------------------------------*/
+
+#footer {
+  background: #4d4d4d url(images/bg-footer.png) center bottom repeat-x;
+  color: #fff;
+  height: 280px;  
+}
+
+.menu-footer {
+  list-style: none;  
+}
+
+.menu-footer li {
+  display: inline-block;
+  margin: 0;
+  padding: 20px 10px 0 0; 
+}
+
+#footer a {
+  color: #ffcc00;
+}
+
+#footer h4 {
+  font-size: 1.3em;
+  margin: 20px 0 0 0;
+}
+
+.contato-footer {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.contato-footer li{
+  margin: 0;
+}
