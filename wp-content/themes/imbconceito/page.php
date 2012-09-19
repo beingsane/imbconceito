@@ -12,20 +12,28 @@
  * @since Twenty Eleven 1.0
  */
 
-get_header(); ?>
+get_header(); ?>		
 
-		<div id="primary">
-			<div id="content" role="main">
+		<div id="content" role="main">
+	        <div class="container_12">
+	            <div class="grid_9">
+	                <span class="canto"></span>
 
-				<?php while ( have_posts() ) : the_post(); ?>
+		            <?php while ( have_posts() ) : the_post(); ?>
 
-					<?php get_template_part( 'content', 'page' ); ?>
+						<?php get_template_part( 'content', 'page' ); ?>
 
-					<?php comments_template( '', true ); ?>
+						<?php comments_template( '', true ); ?>
 
-				<?php endwhile; // end of the loop. ?>
+					<?php endwhile; // end of the loop. ?>	                
 
-			</div><!-- #content -->
-		</div><!-- #primary -->
+	            </div>
+	            
+	            <div class="grid_3">
+	                <?php get_sidebar(); ?>
+	            </div>
+	        </div>
+	    </div>
+
 
 <?php get_footer(); ?>

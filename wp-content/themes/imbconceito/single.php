@@ -9,13 +9,17 @@
 
 get_header(); ?>
 
-		<div id="primary">
-			<div id="content" role="main">
+		<div id="content" role="main">
 
-				<?php while ( have_posts() ) : the_post(); ?>
+	        <div class="container_12">
+
+	            <div class="grid_9">
+	                <span class="canto"></span>
+
+	            	<?php while ( have_posts() ) : the_post(); ?>
 
 					<nav id="nav-single">
-						<h3 class="assistive-text"><?php _e( 'Post navigation', 'twentyeleven' ); ?></h3>
+						<!--<h2 class="assistive-text"><?php _e( 'Post navigation', 'twentyeleven' ); ?></h2>-->
 						<span class="nav-previous"><?php previous_post_link( '%link', __( '<span class="meta-nav">&larr;</span> Previous', 'twentyeleven' ) ); ?></span>
 						<span class="nav-next"><?php next_post_link( '%link', __( 'Next <span class="meta-nav">&rarr;</span>', 'twentyeleven' ) ); ?></span>
 					</nav><!-- #nav-single -->
@@ -24,9 +28,14 @@ get_header(); ?>
 
 					<?php comments_template( '', true ); ?>
 
-				<?php endwhile; // end of the loop. ?>
+					<?php endwhile; // end of the loop. ?>
+				</div>
+	            
+	            <div class="grid_3">
+	                <?php get_sidebar(); ?>
+	            </div>
 
-			</div><!-- #content -->
-		</div><!-- #primary -->
+	        </div>
+	    </div>
 
 <?php get_footer(); ?>
