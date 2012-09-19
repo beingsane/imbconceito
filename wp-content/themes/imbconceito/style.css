@@ -161,7 +161,7 @@ p {
 
 .destaque{
   display: block;
-  background: url(../img/destaque.png) right no-repeat;
+  background: url(images/destaque.png) right no-repeat;
   width: 123px;
   height: 125px;
   position: absolute;  
@@ -174,11 +174,13 @@ p {
   text-shadow: -1px -1px 0 #fff;
 }
 
-.bg-imovel {
+.smooth_slider .smooth_slideri {
   background: url(images/bg-imovel.png) no-repeat;
   width: 350px;
   height: 210px;
 }
+
+.slider_thumbnail {padding: 16px 0 0 17px;}
 
 /* `Search
 ----------------------------------------------------------------------------------------------------*/

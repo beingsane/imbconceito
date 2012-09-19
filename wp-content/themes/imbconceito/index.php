@@ -16,11 +16,46 @@ get_header(); ?>
 
     <div id="slideshow">        
         <div class="container_12">
-            <div class="grid_12">
+            <div class="grid_12">                
                 <?
                 if ( function_exists( 'get_smooth_slider' ) ) {
                      get_smooth_slider(); }
                 ?>
+            </div>            
+        </div>
+    </div>
+
+    <div id="search">
+        <div class="container_12">
+            <div class="grid_12">
+                <form>
+                    <fieldset>
+                        <legend>Encontre seu Imóvel:</legend>
+                        
+                        <label for="tipo">Tipo:
+                            <select id="tipo">
+                                <option>Apartamento</option>
+                                <option>Casa</option>
+                            </select>
+                        </label>
+
+                        <label for="cidade">Cidade:
+                            <select id="cidade">
+                                <option>Apartamento</option>
+                                <option>Casa</option>
+                            </select>
+                        </label>
+                        
+                        <label for="finalidade">Finalidade:
+                            <select id="finalidade">
+                                <option>Apartamento</option>
+                                <option>Casa</option>
+                            </select>
+                        </label>
+                        
+                        <input type="submit" value="Pesquisar" name="Pesquisar">
+                    </fieldset>
+                </form>
             </div>            
         </div>
     </div>
