@@ -62,7 +62,7 @@ get_header(); ?>
 
 	<div id="content">
         <div class="container_12">
-            <div class="grid_9">
+            <div class="grid_9">                
 
             	<div id="content" role="main">
 
