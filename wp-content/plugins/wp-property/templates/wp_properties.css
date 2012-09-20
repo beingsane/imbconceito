@@ -771,9 +771,9 @@ html[xmlns] .clearfix {
 .wpp_property_stats.overview_stats dd span {}
 
 ul#property_stats.list,
-ul.wpp_property_stats.list {margin: 15px 0; list-style-position: inside;list-style-type: none;}
+ul.wpp_property_stats.list {margin: 15px 0 50px 0; list-style-position: inside;list-style-type: none;}
 ul#property_stats.list li,
-ul.wpp_property_stats.list li {padding: 10px 0; border-bottom: 1px dashed #CFCBCB; clear: both;}
+ul.wpp_property_stats.list li {padding: 10px 0; margin: 0; border-bottom: 1px dashed #CFCBCB; clear: both;}
 ul#property_stats.list li.alt,
 ul.wpp_property_stats.list li.alt {background: none repeat scroll 0 0 #EEEEEE;}
 ul#property_stats.list li .attribute,

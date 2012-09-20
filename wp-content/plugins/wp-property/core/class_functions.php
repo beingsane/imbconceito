@@ -3998,7 +3998,7 @@ class WPP_F extends UD_API {
     <table cellpadding="0" cellspacing="0" class="wpp_google_maps_infobox_table" style="">
       <tr>
         <?php if($image['link']) { ?>
-        <td class="wpp_google_maps_left_col" style=" width: <?php echo $image['width']; ?>px">
+        <td class="wpp_google_maps_left_col" style="width: <?php echo $image['width']; ?>px">
           <?php echo $imageHTML; ?>
           <?php if($infobox_settings['show_direction_link'] == 'true'): ?>
           <div class="wpp_google_maps_attribute_row wpp_google_maps_attribute_row_directions_link">
