@@ -342,6 +342,16 @@ p {
   margin: 0;
 }
 
+#first, #second, #third {
+  margin-top: 30px;
+} 
+
+#first .menu li{
+  display: inline;
+  margin: 0;
+  padding: 0 20px 0 0;
+}
+
 
 /* `Comment Form
 ----------------------------------------------------------------------------------------------------*/
@@ -527,7 +537,9 @@ footer.entry-meta a {
 }
 
 
-/* Images */
+/* `Images
+----------------------------------------------------------------------------------------------------*/
+
 .entry-content img,
 .comment-content img,
 .widget img {

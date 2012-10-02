@@ -28,6 +28,7 @@ get_header(); ?>
     <div id="search">
         <div class="container_12">
             <div class="grid_12">
+                
                 <form>
                     <fieldset>
                         <legend>Encontre seu Imóvel:</legend>

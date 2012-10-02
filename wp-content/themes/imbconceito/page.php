@@ -12,7 +12,7 @@
  * @since Twenty Eleven 1.0
  */
 
-get_header(); ?>		
+get_header(); ?>
 
 		<div id="content" role="main">
 	        <div class="container_12">
