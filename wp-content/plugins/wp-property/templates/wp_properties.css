@@ -338,11 +338,11 @@ ul.feps_property_input_fields .description {
 
 .wpp_sorter_options .wpp_sortable_link {
   background: none repeat scroll 0 0 #2F2F2F;
-  border-radius: 6px 6px 6px 6px;
+  border-radius: 3px 3px 3px 3px;
   color: #CCCCCC;
   cursor: pointer;
   margin-left: 6px;
-  padding: 1px 4px;
+  padding: 3px 12px;
 }
 
 .wpp_ui .wpp_pagination_slider_wrapper .wpp_pagination_forward {
@@ -899,7 +899,7 @@ ul.wpp_property_stats.list li .value {}
 }
 
 .wpp_row_view div.property_div {
-  overflow: auto;
+  /*overflow: auto;
   -khtml-border-radius: 5px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -909,10 +909,18 @@ ul.wpp_property_stats.list li .value {}
   -webkit-box-shadow: 0px 1px 4px #C1C1C1;
 
   background: none repeat scroll 0 0 #FFFFFF;
-  margin-bottom: 10px;
-  padding: 1%;
+
+  */
+  background: url(images/bg-property-thumb.png) 0 0 no-repeat;
+  
   position: relative;
-  width: 99%;
+  
+
+  display: block;  
+  width: 220px;
+  float: left;
+  margin-right: 11px;
+  margin-bottom: 20px;
 }
 
 .wpp_row_view .wpp_overview_right_column {
@@ -953,12 +961,14 @@ ul.wpp_property_stats.list li .value {}
   text-decoration: underline;
 }
 
-.wpp_row_view .property_image img {
-  border: 6px solid #F5F5F5; width: auto;
+.wpp_row_view .property_image img {  
+  width: auto;
+  padding: 11px 0 0 12px;
+  margin-bottom: 10px;
 }
 
 .wpp_row_view .property_image .property_overview_thumb {
-  background: none repeat scroll 0 0 #EFEFEF;
+  background: none repeat scroll 0 0;
   color: black;
   display: table-cell;
   text-align: center;
@@ -976,7 +986,7 @@ ul.wpp_property_stats.list li .value {}
 }
 
 .wpp_row_view ul.wpp_overview_data  .property_title {
-  font-size: 1.4em;
+  font-size: 1em;
 }
 
 .wpp_row_view  .property_title a {
@@ -987,18 +997,16 @@ ul.wpp_property_stats.list li .value {}
 .wpp_row_view ul.wpp_overview_data .property_price {
   color: #666363;
   display: block;
-  font-size: 18px;
+  font-size: 1em;
   height: 25px;
-  margin-top: 10px;
-  padding-left: 35px;
+  margin-top: 10px;  
   text-decoration: none;
 }
 
 .wpp_row_view  ul.wpp_overview_data .property_phone_number {
-  background: url("images/phone_address.gif") no-repeat scroll left top transparent;
+  background: url("images/phone_address.gif") no-repeat scroll right top transparent;
   color: #666363;
-  font-size: 18px;
-  padding-left: 34px;
+  font-size: 1em;  
 }
 
 .wpp_row_view  ul.wpp_overview_data .wpp_overview_list {
@@ -1006,10 +1014,9 @@ ul.wpp_property_stats.list li .value {}
 }
 
 .wpp_row_view ul.wpp_overview_data .property_address {
-  background: url("images/phone_address.gif") no-repeat scroll left -36px transparent;
+  background: url("images/phone_address.gif") no-repeat scroll right -36px transparent;
   color: #666363;
-  font-size: 15px;
-  padding-left: 34px;
+  font-size: 1em;  
   line-height: 1.2em;
 }
 
@@ -1058,6 +1065,15 @@ ul.wpp_property_stats.list li .value {}
 
 .wpp_row_view .child_properties table td, .wpp_row_view .child_properties table th {
   border-top: 1px solid #E7E7E7;
+}
+
+.detalhes {
+  display: block;
+  background: #ffcc00;
+  text-align: center;
+  color: #000;
+  padding: 5px 0;
+  box-shadow: 0 12px 0px -5px #ececec;
 }
 
 /* --- Supermap ---*/

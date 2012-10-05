@@ -24,18 +24,25 @@
  * @author Andy Potanin <andy.potnain@twincitiestech.com>
  * @package WP-Property
 */?>
- <?php if ( have_properties() ) { ?>
- <div class="<?php wpp_css('property_overview::row_view', "wpp_row_view wpp_property_view_result"); ?>">
-  <div class="<?php wpp_css('property_overview::all_properties', "all-properties"); ?>">
-  <?php foreach ( returned_properties('load_gallery=false') as $property) {  ?>
 
-    <div class="<?php wpp_css('property_overview::property_div', "property_div {$property['post_type']} clearfix"); ?>">
+<?php if ( have_properties() ) { ?>
 
-        <div class="<?php wpp_css('property_overview::left_column', "wpp_overview_left_column"); ?>">
-          <?php property_overview_image(); ?>
-        </div>
+<div class="<?php wpp_css('property_overview::row_view', "wpp_row_view wpp_property_view_result"); ?>">
+    <div class="<?php wpp_css('property_overview::all_properties', "all-properties"); ?>">
+        <?php foreach ( returned_properties('load_gallery=false') as $property) {  ?>
 
-        <div class="<?php wpp_css('property_overview::right_column', "wpp_overview_right_column"); ?>">
+            <div class="<?php wpp_css('property_overview::property_div', "property_div {$property['post_type']} clearfix"); ?>">
+            <!--
+            <div class="<?php wpp_css('property_overview::left_column', "wpp_overview_left_column"); ?>">
+              <?php property_overview_image(); ?>
+            </div>-->
+
+                <?php property_overview_image(); ?>
+
+
+
+
+        <!--<div class="<?php wpp_css('property_overview::right_column', "wpp_overview_right_column"); ?>">-->
 
             <ul class="<?php wpp_css('property_overview::data', "wpp_overview_data"); ?>">
                 <li class="property_title">
@@ -86,7 +93,12 @@
             <?php endif; ?>
        </ul>
 
-        </div><?php // .wpp_right_column ?>
+        <!--</div>--><?php // .wpp_right_column ?>
+
+        <a <?php echo $in_new_window; ?> href="<?php echo $property['permalink']; ?>" class="detalhes">detahes do imóvel</a>
+        <?php if($property['is_child']): ?>
+            of <a <?php echo $in_new_window; ?> href='<?php echo $property['parent_link']; ?>' class="detalhes">detahes do imóvel</a>
+        <?php endif; ?>
 
     </div><?php // .property_div ?>
 
