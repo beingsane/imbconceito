@@ -24,6 +24,14 @@ get_header(); ?>
 	            </div>
 	        </div>
 	    </div>
+	    
+	    <div id="search">
+	    	<div class="container_12">
+	    		<?//php echo do_shortcode('[property_search]'); ?>
+	    		<?php echo do_shortcode('[property_search searchable_attributes="tipo,cidade,finalidade" per_page=10]'); ?>
+	    	</div>
+	    	<div class="clear"></div>
+	    </div>	    
 
 		<div id="content" role="main">
 	        <div class="container_12">
