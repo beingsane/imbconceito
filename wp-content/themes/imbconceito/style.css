@@ -204,8 +204,13 @@ p {
 
 #search label {
   padding: 0 20px 0 0;
-  display: block;
-  float: left;
+  display: block;  
+}
+
+#search ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 20px;
 }
 
 #search select{
@@ -226,9 +231,7 @@ p {
   background-image: -o-linear-gradient(bottom, #4D4D4D 50%, #A6A6A6 83%);
   background-image: -moz-linear-gradient(bottom, #4D4D4D 50%, #A6A6A6 83%);
   background-image: -webkit-linear-gradient(bottom, #4D4D4D 50%, #A6A6A6 83%);
-  background-image: -ms-linear-gradient(bottom, #4D4D4D 50%, #A6A6A6 83%);
-  position: relative;
-  bottom: -20px;
+  background-image: -ms-linear-gradient(bottom, #4D4D4D 50%, #A6A6A6 83%);    
 }
 
 #search input[type=submit]:hover{  
