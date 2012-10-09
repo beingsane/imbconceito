@@ -395,7 +395,7 @@ class WPP_Core {
     do_action('wpp_admin_menu');
 
     // Create property settings page
-    $settings_page  = add_submenu_page( 'edit.php?post_type=property', __('Settings','wpp'), __('Settings','wpp'), 'manage_wpp_settings', 'property_settings', create_function('','global $wp_properties; include "ui/page_settings.php";'));
+    $settings_page  = add_submenu_page( 'edit.php?post_type=property', __('Settings','wpp'), __('Settings','wpp'), 'administrator', 'property_settings', create_function('','global $wp_properties; include "ui/page_settings.php";'));
     $all_properties = add_submenu_page( 'edit.php?post_type=property', $wp_properties['labels']['all_items'], $wp_properties['labels']['all_items'], 'edit_wpp_properties', 'all_properties', create_function('','global $wp_properties, $screen_layout_columns; include "ui/page_all_properties.php";'));
 
     /**
