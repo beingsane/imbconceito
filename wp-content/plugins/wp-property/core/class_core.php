@@ -1261,6 +1261,8 @@ class WPP_Core {
 
     ob_start();
     echo '<div class="wpp_shortcode_search">';
+    echo '<fildset><legend>Econtre seu imóvel:</legend>';
+
 
     $search_args['searchable_attributes'] = $searchable_attributes;
     $search_args['searchable_property_types'] = $searchable_property_types;
@@ -1271,6 +1273,7 @@ class WPP_Core {
 
     draw_property_search_form($search_args);
 
+    echo '</fildset>';
     echo "</div>";
     $content = ob_get_contents();
     ob_end_clean();
@@ -1788,7 +1791,7 @@ class WPP_Core {
     global $wpp_capabilities;
 
     //* Get Administrator role for adding custom capabilities */
-    $role =& get_role('administrator');
+    $role =& get_role('administrator','editor');
 
     //* General WPP capabilities */
     $wpp_capabilities = array(
