@@ -9,6 +9,10 @@
 
 get_header(); ?>
 
+<div id="content" role="main">
+	<div class="container_12">
+	    <div class="grid_9">
+
 		<section id="primary">
 			<div id="content" role="main">
 
@@ -52,6 +56,13 @@ get_header(); ?>
 
 			</div><!-- #content -->
 		</section><!-- #primary -->
+	</div>
 
-<?php get_sidebar(); ?>
+		<div class="grid_3">
+			<?php get_sidebar(); ?>
+	    </div>
+
+	</div>
+</div>
+
 <?php get_footer(); ?>
