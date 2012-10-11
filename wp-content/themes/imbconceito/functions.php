@@ -611,7 +611,7 @@ add_filter( 'body_class', 'twentyeleven_body_classes' );
 
 
 /**
- * Adicionar shortcodes nos widgets
+ * Função para a adição de shortcodes nos widgets
  */
 
 add_filter('widget_text', 'do_shortcode');
