@@ -672,3 +672,57 @@ a:active img[class*="wp-image-"],
   border-bottom: 1px solid #fff;
   background: #FEA;
 }
+
+/* `Formulário de Contato
+----------------------------------------------------------------------------------------------------*/
+
+.wpcf7 form {
+  background: #ffeeaa;
+  border: 1px solid #ffcc00;
+  padding: 1.5em 0 0 1.5em;
+  position: relative;  
+}
+
+.wpcf7 form p{  
+  padding: 0;  
+}
+
+.wpcf7 form label{
+  padding-left: 5px
+}
+
+.wpcf7 form input[type=text], .wpcf7 form textarea{
+  background: #fff;
+  border: 4px solid #eee;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 1px 3px rgba(204,204,204,0.95);
+  -moz-box-shadow: inset 0 1px 3px rgba(204,204,204,0.95);
+  box-shadow: inset 0 1px 3px rgba(204,204,204,0.95);
+  position: relative;
+  padding: 10px;
+}
+
+.wpcf7 form textarea{
+  font: 14px/1.6 'Cabin', FreeSans, sans-serif;
+}
+
+.wpcf7 form .wpcf7-submit {
+  background: #4d4d4d;
+  border: none;  
+  -webkit-box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+  color: #eee;
+  cursor: pointer;
+  font-size: 15px;
+  margin: 20px 0;
+  padding: 10px 42px 10px 42px;  
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.3);
+}
+
+.wpcf7 form .wpcf7-submit:active {
+  background: #ffcc00;
+  color: #4d4d4d;
+  text-shadow: 0 -1px 0 #ececec;
+}
