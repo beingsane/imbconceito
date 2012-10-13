@@ -655,3 +655,20 @@ a:active img[class*="wp-image-"],
   background: #fff;
   border-color: #ddd;
 }
+
+/* `Sidebar
+----------------------------------------------------------------------------------------------------*/
+#secondary h3{ 
+  background: #e6e6e6;
+  padding: 10px 2px;
+  text-align: center;
+  text-shadow: 1px 1px 0 #fff;
+  margin:0;
+}
+
+#secondary li {
+  list-style: none;
+  padding: 8px 0 8px 10px;
+  border-bottom: 1px solid #fff;
+  background: #FEA;
+}
