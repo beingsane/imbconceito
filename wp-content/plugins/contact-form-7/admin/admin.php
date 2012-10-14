@@ -6,12 +6,12 @@ add_action( 'admin_menu', 'wpcf7_admin_menu', 9 );
 
 function wpcf7_admin_menu() {
 	add_object_page( __( 'Contact Form 7', 'wpcf7' ), __( 'Contact', 'wpcf7' ),
-		'wpcf7_read_contact_forms', 'wpcf7', 'wpcf7_admin_management_page',
+		'administrator', 'wpcf7', 'wpcf7_admin_management_page',
 		wpcf7_plugin_url( 'admin/images/menu-icon.png' ) );
 
 	$contact_form_admin = add_submenu_page( 'wpcf7',
 		__( 'Edit Contact Forms', 'wpcf7' ), __( 'Edit', 'wpcf7' ),
-		'wpcf7_read_contact_forms', 'wpcf7', 'wpcf7_admin_management_page' );
+		'administrator', 'wpcf7', 'wpcf7_admin_management_page' );
 
 	add_action( 'load-' . $contact_form_admin, 'wpcf7_load_contact_form_admin' );
 }
