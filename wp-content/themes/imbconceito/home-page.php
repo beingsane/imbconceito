@@ -14,6 +14,12 @@
 
 get_header(); ?>
 
+<?
+if ( current_user_can('editor') ) {
+ echo 'The current user can moderate comments';
+}
+?>
+
 		<div id="slideshow">        
 	        <div class="container_12">
 	            <div class="grid_12">
@@ -27,7 +33,7 @@ get_header(); ?>
 	    
 	    <div id="search">
 	    	<div class="container_12">
-	    		<?php echo do_shortcode('[property_search searchable_attributes="property_type,cidade,finalidade" per_page=10]'); ?>
+	    		<?php echo do_shortcode('[property_search searchable_attributes="property_type,cidade,finalidade" per_page=9]'); ?>
 	    		<?//php echo do_shortcode('[property_search searchable_attributes="tipo,finalidade,cidade" per_page=10]'); ?>
 	    	</div>
 	    	<div class="clear"></div>

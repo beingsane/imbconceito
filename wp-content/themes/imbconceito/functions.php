@@ -615,3 +615,42 @@ add_filter( 'body_class', 'twentyeleven_body_classes' );
  */
 
 add_filter('widget_text', 'do_shortcode');
+
+
+/**
+ * Função para remover itens do menu do perfil editor
+ */
+
+function remove_menus () {
+
+	if ( current_user_can('editor') ) {
+		global $menu;
+		$restricted = array(__('Links'),__('Pages'),__('Comments'),__('Tools'),__( 'Edit Contact Forms', 'wpcf7' ));
+		end ($menu);
+		while (prev($menu)){
+			$value = explode(' ',$menu[key($menu)][0]);
+			if(in_array($value[0] != NULL?$value[0]:"" , $restricted)){unset($menu[key($menu)]);}
+		}
+	}
+}
+add_action('admin_menu', 'remove_menus');
+
+/**
+ * Função para remover itens da admin-bar
+ */
+
+function wps_admin_bar() {
+	if ( current_user_can('editor') ) {
+		global $wp_admin_bar;
+	    //$wp_admin_bar->remove_menu('wp-logo');
+	    //$wp_admin_bar->remove_menu('about');
+	    //$wp_admin_bar->remove_menu('wporg');
+	    //$wp_admin_bar->remove_menu('documentation');
+	    //$wp_admin_bar->remove_menu('support-forums');
+	    //$wp_admin_bar->remove_menu('feedback');
+	    $wp_admin_bar->remove_menu('comments');
+	    $wp_admin_bar->remove_menu('new-content');
+	    //$wp_admin_bar->remove_menu('view-site');
+	}    
+}
+add_action( 'wp_before_admin_bar_render', 'wps_admin_bar' );

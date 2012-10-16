@@ -332,7 +332,7 @@ ul.feps_property_input_fields .description {
 }
 
 .wpp_sorter_options .wpp_sortable_link.wpp_sorted_element {
-  background: none repeat scroll 0 0 #D36E09;
+  background: none repeat scroll 0 0 #ffcc00;
   color: #1C1711;
 }
 
@@ -855,7 +855,6 @@ ul.wpp_property_stats.list li .value {}
 }
 
 .wpp_search_properties_widget .wpp_search_elements li {
-  margin-bottom: 10px;
   text-align: left;
 }
 
@@ -871,7 +870,7 @@ ul.wpp_property_stats.list li .value {}
 
 .wpp_search_properties_widget .wpp_search_elements li label {
   float: left;
-  width: 85px;
+  width: 90px;
 }
 
 .wpp_gallery_widget br {

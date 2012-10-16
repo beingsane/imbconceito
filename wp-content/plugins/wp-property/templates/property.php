@@ -98,7 +98,7 @@
                             <div class="<?php wpp_css('property::title', "building_title_wrapper"); ?>">
                                 <span class="canto"></span>
                                 <h2 class="property-title entry-title"><?php the_title(); ?></h2>
-                                <h3 class="entry-subtitle"><?php the_tagline(); ?></h3>
+                                <!--<h3 class="entry-subtitle"><?php the_tagline(); ?></h3>-->
                             </div>
 
 
@@ -130,7 +130,7 @@
                     <?php if(!empty($wp_properties['taxonomies'])) foreach($wp_properties['taxonomies'] as $tax_slug => $tax_data): ?>
                       <?php if(get_features("type={$tax_slug}&format=count")):  ?>
                       <div class="<?php echo $tax_slug; ?>_list">
-                      <h2><?php echo $tax_data['label']; ?></h2>
+                      <h3><?php echo $tax_data['label']; ?></h3>
                       <ul class="clearfix">
                       <?php get_features("type={$tax_slug}&format=list&links=true"); ?>
                       </ul>
@@ -143,7 +143,7 @@
                       if(empty($post->$meta_slug) || $meta_slug == 'tagline')
                         continue;
                     ?>
-                      <h2><?php echo $meta_title; ?></h2>
+                      <h3><?php echo $meta_title; ?></h3>
                       <p><?php echo  do_shortcode(html_entity_decode($post->$meta_slug)); ?></p>
                     <?php endforeach; ?>
                     <?php endif; ?>
@@ -154,7 +154,7 @@
                     <?php endif; ?>
 
                     <?php if(class_exists('WPP_Inquiry')): ?>
-                      <h2><?php _e('Interested?','wpp') ?></h2>
+                      <h3><?php _e('Interested?','wpp') ?></h3>
                       <?php WPP_Inquiry::contact_form(); ?>
                     <?php endif; ?>
 
