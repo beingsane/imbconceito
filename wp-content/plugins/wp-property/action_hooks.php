@@ -182,7 +182,7 @@
     'show_direction_link' => true,
     'show_property_title' => true
     );
-
+ /*   
   $wp_properties['taxonomies'] = array(
     'property_feature'  =>  array(
        'hierarchical' => false,
@@ -245,6 +245,8 @@
        'rewrite' => array('slug' => 'community_feature' )
       )
   );
+
+  */
   
   // Default attribute label descriptions for the back-end
   $wp_properties['descriptions'] = array(
