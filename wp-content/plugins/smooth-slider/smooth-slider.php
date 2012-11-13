@@ -380,7 +380,7 @@ function smooth_slider_add_custom_box() {
 	if( function_exists( 'add_meta_box' ) ) {
 	    $post_types=get_post_types(); 
 		foreach($post_types as $post_type) {
-		  add_meta_box( 'sslider_box1', __( 'Smooth Slider' , 'smooth-slider'), 'smooth_slider_edit_custom_box', $post_type, 'advanced' );
+		  add_meta_box( 'sslider_box1', __( 'Slideshow - Destaque' , 'smooth-slider'), 'smooth_slider_edit_custom_box', $post_type, 'advanced' );
 		}
 		//add_meta_box( $id,   $title,     $callback,   $page, $context, $priority ); 
 	} else {
@@ -417,7 +417,7 @@ function add_to_slider_checkbox() {
 ?>
 		<div id="slider_checkbox">
 				<input type="checkbox" class="sldr_post" name="slider" value="slider" <?php echo $extra;?> />
-				<label for="slider"><?php _e('Add this post/page to','smooth-slider'); ?> </label>
+				<label for="slider"><?php _e('Adicionar como destaque','smooth-slider'); ?> </label>
 				<select name="slider_name[]" multiple="multiple" size="2" style="height:4em;">
                 <?php foreach ($sliders as $slider) { ?>
                   <option value="<?php echo $slider['slider_id'];?>" <?php if(in_array($slider['slider_id'],$post_slider_arr)){echo 'selected';} ?>><?php echo $slider['slider_name'];?></option>
@@ -445,6 +445,13 @@ function add_to_slider_checkbox() {
         <?php
         $slider_style = get_post_meta($post->ID,'_smooth_slider_style',true);
         ?>
+
+        <?php 
+        	if (current_user_can('administrator')) {
+        		# code...
+        	
+        ?>
+
          <select name="_smooth_slider_style" >
 			<?php 
             $directory = SMOOTH_SLIDER_CSS_DIR;
@@ -469,8 +476,12 @@ function add_to_slider_checkbox() {
                 <fieldset>
                 <label for="sslider_link"><?php _e('Slide Link URL ','smooth-slider'); ?>
                 <input type="text" name="sslider_link" class="sslider_link" value="<?php echo $sslider_link;?>" size="50" /><small><?php _e('If left empty, it will be by default linked to the permalink.','smooth-slider'); ?></small> </label><br />
-                <label for="sslider_nolink"> 
+                <label for="sslider_nolink">
+                	
+
+                
                 <input type="checkbox" name="sslider_nolink" class="sslider_nolink" value="1" <?php if($sslider_nolink=='1'){echo "checked";}?>  /> <?php _e('Do not link this slide to any page(url)','smooth-slider'); ?></label>
+                <?php } ?> 
                  </fieldset>
                  </div>
         
