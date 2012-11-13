@@ -396,7 +396,8 @@ class WPP_Core {
 
     // Create property settings page
     $settings_page  = add_submenu_page( 'edit.php?post_type=property', __('Settings','wpp'), __('Settings','wpp'), 'administrator', 'property_settings', create_function('','global $wp_properties; include "ui/page_settings.php";'));
-    $all_properties = add_submenu_page( 'edit.php?post_type=property', $wp_properties['labels']['all_items'], $wp_properties['labels']['all_items'], 'edit_wpp_properties', 'all_properties', create_function('','global $wp_properties, $screen_layout_columns; include "ui/page_all_properties.php";'));
+    $all_properties = add_submenu_page( 'edit.php?post_type=property', $wp_properties['labels']['all_items'], $wp_properties['labels']['all_items'], 'edit_wpp_properties', 'all_properties', create_function('','global $wp_properties, $screen_layout_columns; include "ui/page_all_properties.php";'));    
+    
 
     /**
      * Next used to add custom submenu page 'All Properties' with Javascript dataTable
