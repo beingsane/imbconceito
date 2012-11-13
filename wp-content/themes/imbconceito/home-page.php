@@ -14,12 +14,6 @@
 
 get_header(); ?>
 
-<?
-if ( current_user_can('editor') ) {
- echo 'The current user can moderate comments';
-}
-?>
-
 		<div id="slideshow">        
 	        <div class="container_12">
 	            <div class="grid_12">
