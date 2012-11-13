@@ -96,7 +96,7 @@
 	                <ul>
 	                    <li class="fone">61. 3358-9920</li>
 	                    <li class="celular">61. 8413-6563</li>
-	                    <li class="email">contato@imobiliariaconceito.com</li>
+	                    <li class="email">henrique@imobiliariaconceito.com</li>
 	                </ul>
 	            </div>
 	        </div>

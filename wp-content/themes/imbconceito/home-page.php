@@ -28,7 +28,6 @@ get_header(); ?>
 	    <div id="search">
 	    	<div class="container_12">
 	    		<?php echo do_shortcode('[property_search searchable_attributes="property_type,cidade,finalidade" per_page=9]'); ?>
-	    		<?//php echo do_shortcode('[property_search searchable_attributes="tipo,finalidade,cidade" per_page=10]'); ?>
 	    	</div>
 	    	<div class="clear"></div>
 	    </div>	    
